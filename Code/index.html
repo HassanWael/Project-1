@@ -10,7 +10,8 @@
     <title>Hassan's Porti</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-
+        // this little  Scripto is for hide and show and contact form line 281
+        //try to use .toggle next time my friend :)
         $(document).ready(function () {
             var bool = true;
             $(".button-1").click(function () {
@@ -27,20 +28,24 @@
 
 <body>
 
+    <!-- Nav bar Section -->
     <div class="topnav container">
         <a href="#home" class="active"> <img class="logo" id="logo" src="images/logo.png" alt="My logo"></a>
-        <!-- Navigation links (hidden by default) -->
+
         <div id="myLinks">
+            <a class="links" href="#services">Services</a>
             <a class="links" href="#skills_qual">Skills</a>
             <a class="links" href="#project">Projects</a>
             <a class="links button-1" href="#email">Contact</a>
+
         </div>
         <img src="images/icon.png" class="burger" alt="">
 
         </a>
     </div>
-
+    <!-- Header The introduction -->
     <div class="container margin-top">
+        <!-- El wave -->
         <div class="wave-container">
             <img src="images\wave.png" alt="img" id="wave">
         </div>
@@ -60,13 +65,10 @@
             <div class="col-md-4"> </div>
         </div>
 
-
+        <!-- This Row is for talking about my self -->
         <div class="row my-self">
             <div class="col-md-3"> </div>
             <div class="col-md-6">
-
-
-
                 <h3 class="font-h3">Hello, I'm Hassan Wael, Welcome to
                     my world</h3>
                 <h4 class="font-h3-h4"> Young Software Engineer full 0f passion, I have a Bachelor degree in Software
@@ -77,12 +79,19 @@
             </div>
             <div class="col-md-3"> </div>
         </div>
+        <!--    ------------------------------------------------------------------------------------  -->
+
     </div>
-    <div class="container">
+    <!-- End Of Header  -->
+
+    <!--My Services Android and web -->
+    <div class="container" id="services">
         <section id="mid-section">
             <div class="container">
+                <!-- The row for whole services-->
                 <div class="row">
                     <div class="col-md-1"> </div>
+                    <!--This div is for the Android Section -->
                     <div
                         class="d-flex flex-wrap flex-column col-lg-5 col-md-12   bg-light align-items-center justify-content-around box android-web">
 
@@ -99,14 +108,15 @@
                         <Span>Dev Tools:</span>
 
                         <ul class="skills">
-                            <li>Brackets </li>
-                            <li>Visual Studio Code</li>
-                            <li>GitHub</li>
-                            <li>GitPages</li>
-                            <li>BootStrap</li>
+                            <li> <img src="images/visual-studio.png" width="60px" height="60px" /> <b>Visual Studio
+                                    Code</b> </li>
+                            <li> <img src="images/github.png" alt="github img" width="60px" height="60px"> <b>
+                                    GitHub</b></li>
                         </ul>
 
                     </div>
+                    <!-- End for Android Section -->
+                    <!--Start Of Web Development Section -->
                     <div
                         class="d-flex flex-wrap flex-column col-lg-5 col-md-12  bg-light align-items-center justify-content-around box android-web">
                         <img src="images/Android.png" alt="Web img">
@@ -118,19 +128,20 @@
                         <span>Java, XML, MYSQL, Loading...</span>
                         <span>Dev Tools:</span>
                         <ul class="skills">
-                            <li>Android Studio </li>
-                            <li>Intellig Idea</li>
-                            <li>GitHub</li>
-                            <li>GitPages</li>
-                            <li>BootStrap</li>
+                            <li> <img src="images/android-studio.png" alt="github img" width="60px"
+                                    height="60px"><b>Android Studio</b> </li>
+                            <li> <img src="images/github.png" alt="github img" width="60px" height="60px"> <b>
+                                    GitHub</b></li>
                         </ul>
                     </div>
                     <div class="col-md-1"> </div>
                 </div>
-
-            </div>
+                <!--This div for the row above -->
+            </div> <!-- This div for the Child container -->
         </section>
-    </div>
+    </div> <!-- This div for the Parent container -->
+
+    <!--Skills and Qualification Section -->
     <div class="container margin-top ">
         <div class="row">
             <div class="col-md-4"> </div>
@@ -139,57 +150,60 @@
             </div>
             <div class="col-md-4"> </div>
         </div>
-        <div class="col-md-12 d-flex flex justify-content-around">
+        <!--The First 3 columns -->
+        <div class="row">
+       
+            <div class="col-md-12 d-flex flex justify-content-around">
+                <div class="row rowSkills d-flex flex justify-content-around">
+                    <div class="col-md-3 d-flex flex-column justify-content-around align-items-center box">
+                        <img class="icons" src="images/ux.png" alt="UX-UI">
+                        <p>UX-UI Design</p>
+                    </div>
 
+                    <div class="col-md-3 d-flex flex-column justify-content-around align-items-center box ">
+                        <img class="icons" src="images/idea.png" alt="Idea Pitching">
+                        <p>Idea Pitching</p>
+                    </div>
 
-            <div class="row">
-                <div class="col-lg-4 col-md-12 d-flex flex-column justify-content-around align-items-center box">
-                    <img class="icons" src="images/ux.png" alt="UX-UI">
-                    <p>UX-UI Design</p>
+                    <div class="col-md-3 d-flex flex-column justify-content-around align-items-center box">
+                        <img class="icons" src="images/pres.jpg" alt="Presentation Skills">
+                        <p>Presentation Skills</p>
+                    </div>
                 </div>
-
-                <div class="col-lg-4 col-md-12 d-flex flex-column justify-content-around align-items-center box ">
-                    <img class="icons" src="images/idea.png" alt="Idea Pitching">
-                    <p>Idea Pitching</p>
-                </div>
-
-                <div class="col-lg-4 col-md-12 d-flex flex-column justify-content-around align-items-center box">
-                    <img class="icons" src="images/pres.jpg" alt="Presentation Skills">
-                    <p>Presentation Skills</p>
-                </div>
-
-
             </div>
-
+          
 
         </div>
-        <div class="col-md-12 d-flex flex justify-content-around">
 
-
-            <div class="row">
-
-                <div class="col-lg-4 col-md-12 d-flex flex-column justify-content-around align-items-center box">
+        <!--The 2nd 3 Columns  -->
+        <div class="row">
+           
+            <div class="col-md-12 d-flex flex justify-content-around">
+                <div class="row rowSkills d-flex flex justify-content-around">
+                <div class="col-md-3 d-flex flex-column justify-content-around align-items-center box">
                     <img class="icons" src="images/problem.png" alt="Problem Solving">
                     <p>Problem Solving</p>
                 </div>
 
-                <div class="col-lg-4 col-md-12 d-flex flex-column justify-content-around align-items-center box">
+                <div class="col-md-3 d-flex flex-column justify-content-around align-items-center box">
                     <img class="icons" src="images/teamwork.png" alt="Team work">
                     <p>Team Work</p>
                 </div>
 
-                <div class="col-lg-4 col-md-12 d-flex flex-column justify-content-around align-items-center box">
+                <div class="col-md-3 d-flex flex-column justify-content-around align-items-center box">
                     <img class="icons" src="images/mockup.png" alt="MockUp">
                     <p>Design/Create Mockup</p>
                 </div>
-
             </div>
-
-
+            </div>
+         
         </div>
+
     </div>
+    <!--End of skill and qualification section -->
 
 
+    <!--Start of projects -->
     <div class="container margin-top">
         <div class="row">
             <div class="col-md-4"> </div>
@@ -214,8 +228,8 @@
 
                     <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center box">
                         <img class="icons" src="images/dropoflife.png" alt="Drop of Life">
-                        <p> <a href="https://github.com/HassanWael/DropOfLife">Drop Of Life</a></p> <span
-                            class="box-span" style="width: 100%; height: 2px;"> </span>
+                        <p> <a href="https://github.com/HassanWael/DropOfLife" target="_blank">Drop Of Life</a></p>
+                        <span class="box-span" style="width: 100%; height: 2px;"> </span>
                         <p>Drop of life is an Android application that we have participated with in Crown prince for
                             goverment applications
                             that helps the hospitals and health centers with the communications between them and the
@@ -225,8 +239,8 @@
 
                     <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center box">
                         <img class="icons" src="images/accredited.png" alt="Accreditation System">
-                        <p> <a href="https://github.com/HassanWael/GraduationProject">Accreditation System</a></p> <span
-                            class="box-span" style="width: 100%; height: 2px;"> </span>
+                        <p> <a href="https://github.com/HassanWael/GraduationProject" target="_blank">Accreditation
+                                System</a></p> <span class="box-span" style="width: 100%; height: 2px;"> </span>
                         <p>A System that tracks all students, lecturers and
                             all materials needed, from student’s grades and Syllabus to the grades expected by the
                             students
@@ -238,6 +252,7 @@
         </div>
 
     </div>
+    <!--End of projects -->
     <div class="container margin-top">
         <div class="row">
             <div class="col-md-4"> </div>
@@ -263,6 +278,7 @@
             </div>
 
         </div>
+        <!--This form is hidden by default -->
         <div id="form">
             <form>'
                 <label for="email">E-mail: </label> <input type="email" id="email"
@@ -272,6 +288,7 @@
             </form>
         </div>
 
+        <!-- Footer -->
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <p id="footer-text" class="col-md-4 mb-0 text-muted">© 2021 Company, Inc</p>
 
